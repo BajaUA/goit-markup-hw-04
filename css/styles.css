@@ -498,20 +498,21 @@ img {
   position: relative;
   overflow: hidden;
 }
-.products-item:is(:hover, :focus) .products-cover-block {
+.products-link:is(:hover, :focus) .products-cover-text {
   transform: translateY(0%);
 }
-.products-cover-block {
-  position: absolute;
-  background-color: var(--main-brand-color);
-  top: 0;
-  left: 0;
-  padding: 40px 32px 40px 32px;
-  height: 100%;
-  transform: translateY(100%);
-}
+
 .products-cover-text {
   color: var(--footer-color);
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 40px 32px;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform var(--transition);
+  background-color: var(--main-brand-color);
 }
 
 /**------BACDROP---------------- */
